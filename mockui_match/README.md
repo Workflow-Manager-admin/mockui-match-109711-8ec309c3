@@ -11,6 +11,26 @@ This project provides a minimal React template with a clean, modern UI and minim
 
 ## Important Note: Babel Configuration
 
+---
+
+### 🛠 PUBLIC_URL Build Error Troubleshooting
+
+If you encounter the error:
+
+```
+Template execution failed: ReferenceError: PUBLIC_URL is not defined
+```
+
+This is caused by the `PUBLIC_URL` environment variable not being set during builds. The solution is to use:
+
+```sh
+PUBLIC_URL=. npm run build
+```
+
+instead of just `npm run build`.
+
+---
+
 This project’s `package.json` includes a `babel` section with a plugin:
 
 ```json

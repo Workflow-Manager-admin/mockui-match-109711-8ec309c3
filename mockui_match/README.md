@@ -40,6 +40,14 @@ Launches the test runner in interactive watch mode.
 
 ### `npm run build`
 
+**Important:** If you receive an error about `PUBLIC_URL` not being defined, run the build command as follows:
+
+```sh
+PUBLIC_URL=. npm run build
+```
+
+This ensures the environment variable is set for Create React App builds.
+
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 

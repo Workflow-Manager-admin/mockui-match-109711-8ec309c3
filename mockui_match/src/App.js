@@ -5,7 +5,12 @@ function App() {
   return (
     <div className="app">
       <nav className="navbar">
-        <div className="container">
+        <div
+          className="container"
+          style={{
+            color: '#ffffff',
+            backgroundColor: '#00008b'
+          }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
             <div className="logo">
               <span className="logo-symbol">*</span> KAVIA AI
@@ -16,11 +21,20 @@ function App() {
       </nav>
 
       <main>
-        <div className="container">
+        <div
+          className="container"
+          style={{
+            color: '#ffffff',
+            backgroundColor: '#00008b'
+          }}>
           <div className="hero">
             <div className="subtitle">AI Workflow Manager Template</div>
             
-            <h1 className="title">mockui_match</h1>
+            <h1
+              className="title"
+              style={{
+                color: '#d21e1e'
+              }}>mockui_match</h1>
             
             <div className="description">
               Start building your application.

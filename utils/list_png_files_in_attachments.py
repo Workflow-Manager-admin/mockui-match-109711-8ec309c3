@@ -12,5 +12,8 @@ if __name__ == "__main__":
     directory = "/home/kavia/workspace/code-generation/attachments"
     png_files = list_png_files(directory)
     print("Available .png files in /home/kavia/workspace/code-generation/attachments:")
-    for f in png_files:
-        print(f)
+    if png_files:
+        for f in png_files:
+            print(f"- {f}")
+    else:
+        print("No .png files found in the directory.")
